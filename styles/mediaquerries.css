@@ -1,0 +1,40 @@
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 80px 30px;
+    height: auto;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-image img {
+    max-width: 90%;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    background: #212529;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .nav-links li {
+    margin-bottom: 10px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
