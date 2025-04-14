@@ -100,9 +100,9 @@ ol {
   cursor: pointer;
 }
 
-.button:hover {
-  /* background-color: var(--BUTTON-HOVER-BG); */
-}
+/* .button:hover {
+  background-color: var(--BUTTON-HOVER-BG);
+} */
 
 /* GENERAL STYLES  */
 html {
@@ -156,9 +156,9 @@ body {
   transition: color 0.3s ease-in-out;
 }
 
-.nav-links li a:hover {
-  /* color: var(--LINK-HOVER); */
-}
+/* .nav-links li a:hover {
+  color: var(--LINK-HOVER);
+} */
 
 /* Mobile Menu */
 .menu-toggle {
@@ -293,10 +293,10 @@ body {
   transition: color 0.3s ease-in-out;
 }
 
-#testimonies a:hover {
-  /* text-decoration: underline pink;
-  text-underline-offset: 0.5rem; */
-}
+/* #testimonies a:hover {
+  text-decoration: underline pink;
+  text-underline-offset: 0.5rem;
+} */
 
 .hgt-pink {
   color: pink;
