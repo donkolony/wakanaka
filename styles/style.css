@@ -86,6 +86,10 @@ ol {
   background: var(--CARD-BG);
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+  cursor: pointer;
+  /* overflow: hidden; */
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .button {
@@ -227,24 +231,33 @@ body {
 
 /********** SERVICES SECTION **********/
 .card__img-container {
-  height: 290px;
+  width: 100%;
+  height: 260px;
   overflow: hidden;
-  border-top-right-radius: var(--CARDS-RADIUS);
-  border-top-left-radius: var(--CARDS-RADIUS);
+  border-radius: var(--CARDS-RADIUS) var(--CARDS-RADIUS) 0 0;
+  transition: transform 0.4s ease;
 }
 
 .cards__img-container img {
-  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
 }
 
 .card__details {
-  gap: 5rem;
   padding: 1rem;
+  transition: color 0.3s ease;
 }
 
 .card__details p {
-  font-size: 14px;
+  font-size: 15px;
   margin-bottom: 2rem;
+}
+
+/* Effects */
+.services .cards__container .card:hover .card__img-container {
+  transform: translateY(-10px);
 }
 
 /********** ACADEMY SECTION **********/
@@ -274,15 +287,24 @@ body {
   position: relative;
   background: var(--SECTION-BG-COLOR);
   height: 70vh;
+  padding: 60px 80px 80px;
 }
 
 .testimony-cards {
   display: flex;
   justify-content: flex-start;
-  height: 40vh;
+  height: 45vh;
   padding: 1rem;
   background: #fff;
   position: relative;
+  /* Effects */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.testimony-cards:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 25px 45px,
+    rgba(0, 0, 0, 0.25) 0px 20px 20px;
 }
 
 .testimony-cards h4 {
@@ -300,22 +322,24 @@ body {
   bottom: 0.5rem;
 }
 
-#testimonies a {
+.review-btn {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   margin-top: 1rem;
   padding: 10px 20px;
-  background-color: var(--BUTTON-BG);
-  color: var(--BUTTON-COLOR);
-  border-radius: 8px;
-  font-weight: 500;
-  transition: background-color 0.3s ease;
+
+  color: gray;
+  text-decoration: underline;
+  text-decoration-thickness: 0.5px;
+  text-underline-offset: 10px;
   cursor: pointer;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
-#testimonies a:hover {
-  background-color: var(--BUTTON-HOVER-BG);
+.review-btn:hover {
+  text-decoration: none;
+  color: var(--LINK-HOVER);
 }
 
 .hgt-pink {
@@ -326,7 +350,6 @@ body {
 .hours__container {
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 2rem;
   padding: 1rem;
 }
@@ -339,12 +362,25 @@ body {
   max-width: 100%;
 }
 
-.hours-text {
-  max-width: 500px;
+.hours__details-container p {
+  max-width: 450px;
   margin-bottom: 1rem;
   color: var(--FONT-COLOR-SECONDARY);
-  text-align: justify;
   font-size: 14px;
+}
+
+.hours__details-container a {
+  color: gray;
+  text-decoration: underline;
+  text-decoration-thickness: 0.5px;
+  text-underline-offset: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.hours__details-container a:hover {
+  text-decoration: none;
+  color: var(--LINK-HOVER);
 }
 
 /********** FQA SECTION **********/
