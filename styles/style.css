@@ -86,7 +86,6 @@ ol {
   background: var(--CARD-BG);
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
-
   cursor: pointer;
   /* overflow: hidden; */
   transition: transform 0.4s ease, box-shadow 0.4s ease;
@@ -118,6 +117,14 @@ body {
   background: var(--SECTION-BG-COLOR);
   color: var(--FONT-COLOR-PRIMARY);
   overflow-x: hidden;
+}
+
+section {
+  scroll-margin-top: 80px; /* Adjust this to your nav height */
+}
+
+.hgt-pink {
+  color: pink;
 }
 
 /********** NAV SECTION **********/
@@ -204,12 +211,12 @@ body {
 }
 
 .hero-img-model-container {
-  max-width: 400px;
+  max-width: 600px;
   height: auto;
 }
 
 .hero-details-container {
-  max-width: 500px;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -218,11 +225,11 @@ body {
 
 .hero-details-container img {
   width: 400px;
-  height: auto;
 }
 
 .hero-details-container p {
   text-align: center;
+  font-size: 1.25rem;
 }
 
 .hgt-pink {
@@ -250,8 +257,11 @@ body {
   transition: color 0.3s ease;
 }
 
+.card__details h3 {
+  margin-bottom: 0.5rem;
+}
+
 .card__details p {
-  font-size: 15px;
   margin-bottom: 2rem;
 }
 
@@ -260,7 +270,12 @@ body {
   transform: translateY(-10px);
 }
 
+.services .cards__container .card:hover .card__details .button {
+  background-color: var(--BUTTON-HOVER-BG);
+}
+
 /********** ACADEMY SECTION **********/
+
 .academy__container {
   display: flex;
   justify-content: center;
@@ -286,25 +301,26 @@ body {
 #testimonies {
   position: relative;
   background: var(--SECTION-BG-COLOR);
-  height: 70vh;
   padding: 60px 80px 80px;
 }
 
 .testimony-cards {
   display: flex;
   justify-content: flex-start;
-  height: 45vh;
+  height: 300px;
   padding: 1rem;
   background: #fff;
-  position: relative;
   /* Effects */
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease, border 0.3s ease;
+  position: relative;
 }
 
 .testimony-cards:hover {
   transform: translateY(-8px) scale(1.01);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 25px 45px,
     rgba(0, 0, 0, 0.25) 0px 20px 20px;
+  background-color: var(--CARD-BG);
 }
 
 .testimony-cards h4 {
@@ -319,7 +335,7 @@ body {
 
 .rating {
   position: absolute;
-  bottom: 0.5rem;
+  bottom: 1.5rem;
 }
 
 .review-btn {
@@ -328,7 +344,6 @@ body {
   transform: translateX(-50%);
   margin-top: 1rem;
   padding: 10px 20px;
-
   color: gray;
   text-decoration: underline;
   text-decoration-thickness: 0.5px;
@@ -342,10 +357,6 @@ body {
   color: var(--LINK-HOVER);
 }
 
-.hgt-pink {
-  color: pink;
-}
-
 /********** HOURS SECTION **********/
 .hours__container {
   display: flex;
@@ -355,7 +366,7 @@ body {
 }
 
 .hours__img-container {
-  max-width: 450px;
+  max-width: 500px;
 }
 
 .hours__img-container img {
@@ -366,7 +377,6 @@ body {
   max-width: 450px;
   margin-bottom: 1rem;
   color: var(--FONT-COLOR-SECONDARY);
-  font-size: 14px;
 }
 
 .hours__details-container a {
@@ -384,7 +394,6 @@ body {
 }
 
 /********** FQA SECTION **********/
-
 .fqa__card-container {
   display: flex;
   justify-content: center;
@@ -402,19 +411,30 @@ body {
   border: 1px solid var(--BORDER-COLOR);
   border-radius: var(--CARDS-RADIUS);
   background: var(--CARD-BG);
+  background: #fff;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  height: 40vh;
+  height: 300px;
   padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease, border 0.3s ease;
+  cursor: pointer;
+  color: #000;
+}
+
+.fqa-card:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 25px 45px,
+    rgba(0, 0, 0, 0.25) 0px 20px 20px;
+  background-color: var(--CARD-BG);
 }
 
 .fqa h5 {
-  text-align: center;
+  margin-bottom: 0.5rem;
 }
 
 .fqa p {
-  text-align: center;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 /********** FOOTER SECTION **********/
