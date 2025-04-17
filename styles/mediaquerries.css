@@ -38,3 +38,29 @@
     display: block;
   }
 }
+
+@media screen and (max-width: 1013px) {
+  .hours__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem;
+  }
+
+  .hours__details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hours__details-container p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .hero {
+    flex-wrap: wrap;
+  }
+}

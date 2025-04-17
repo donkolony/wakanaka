@@ -70,6 +70,7 @@ ol {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 1rem;
   padding: 1rem;
 }
@@ -280,6 +281,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 2rem;
   padding: 1rem;
 }
@@ -361,6 +363,7 @@ section {
 .hours__container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 2rem;
   padding: 1rem;
 }
@@ -398,6 +401,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 1rem;
   padding: 1rem;
 }
