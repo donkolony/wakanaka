@@ -1,24 +1,118 @@
-@media screen and (min-width: 640px) and (max-width: 1024px) {
+@media screen and (min-width: 811px) and (max-width: 1113px) {
+  .hero {
+    flex-direction: column;
+    min-height: 100vh;
+  }
 }
 
 /* Responsive Design */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
+  #home {
+    height: min-content;
+  }
+
+  .footer .nav-links {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .footer .nav-links,
+  .footer .nav-links a {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .section__title {
+    font-size: 1.5rem;
+  }
+
   .hero {
     flex-direction: column;
+    margin-top: 0;
+  }
+
+  .hero-img-model-container {
+    max-width: 350px;
+    margin-top: 2.5rem;
+  }
+
+  .hero-details-container img {
+    width: 200px;
+  }
+
+  .hero-details-container p {
+    font-size: 14px;
+    padding: 1rem;
+    max-width: 350px;
+  }
+
+  .cards__container {
+    flex-direction: column;
+  }
+
+  .academy__container {
+    flex-direction: column;
+  }
+
+  .academy__img-container {
+    max-width: 350px;
+  }
+
+  .academic__details {
+    max-width: 350px;
+  }
+
+  #testimonies {
+    padding: 0;
+  }
+
+  .hours .section__title {
+    margin-top: 6rem;
+  }
+
+  .hours__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hours__details-container p {
+    max-width: 350px;
+  }
+
+  .hours__img-container {
+    max-width: 350px;
+  }
+
+  .fqa__card-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1063px) {
+  .hours__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hours__details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hours__details-container p {
     text-align: center;
-    padding: 80px 30px;
-    height: auto;
   }
 
-  .hero-text {
-    max-width: 100%;
+  .footer-sig {
+    font-size: 13px;
   }
+}
 
-  .hero-image img {
-    max-width: 90%;
-  }
-
-  .nav-links {
+@media screen and (max-width: 1024px) {
+  .navbar .nav-links {
     display: none;
     flex-direction: column;
     position: absolute;
@@ -36,31 +130,5 @@
 
   .menu-toggle {
     display: block;
-  }
-}
-
-@media screen and (max-width: 1013px) {
-  .hours__container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-    padding: 1rem;
-  }
-
-  .hours__details-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .hours__details-container p {
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .hero {
-    flex-wrap: wrap;
   }
 }

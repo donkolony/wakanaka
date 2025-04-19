@@ -197,16 +197,13 @@ section {
 }
 
 /********** HERO SECTION **********/
-#home {
-  height: 100vh;
-}
 
 .hero {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  height: 90vh;
+  height: 100vh;
   margin-top: 3rem;
   background: var(--BODY-BG-COLOR);
 }
@@ -276,7 +273,6 @@ section {
 }
 
 /********** ACADEMY SECTION **********/
-
 .academy__container {
   display: flex;
   justify-content: center;
@@ -302,8 +298,7 @@ section {
 /********** TESTIMONIES  SECTION **********/
 #testimonies {
   position: relative;
-  background: var(--SECTION-BG-COLOR);
-  padding: 60px 80px 80px;
+  padding: 60px 0px 80px;
 }
 
 .testimony-cards {
